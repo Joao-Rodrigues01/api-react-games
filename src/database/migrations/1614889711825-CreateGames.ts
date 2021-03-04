@@ -16,7 +16,7 @@ export default class CreateGames1614889711825 implements MigrationInterface {
                     type: 'varchar',
                 },
                 {
-                    name: 'image',
+                    name: 'image_url',
                     type: 'varchar'
                 },
                 {
