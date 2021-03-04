@@ -1,9 +1,14 @@
-import { Request, Response, Router } from 'express';
+import { Router } from 'express';
+import GameController from './controllers/GameController';
 
 const router = Router();
 
-router.get('/games', (request: Request, response: Response) => {
-  return response.json({ok: true});
-})
+const gameController = new GameController();
+
+router.post('/games', gameController.create);
+
+router.get('/games/:id', gameController.show);
+
+router.get('/games', gameController.index);
 
 export default router;
