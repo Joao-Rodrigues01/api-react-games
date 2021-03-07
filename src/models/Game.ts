@@ -23,6 +23,9 @@ class Game {
   @CreateDateColumn()
   created_at: Date;
 
+  @Column('boolean', { default: false })
+  is_installed: boolean;
+
   constructor() {
 		if(!this.id) {
 			this.id = uuid();
