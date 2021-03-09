@@ -1,5 +1,5 @@
 import { Request, Response } from "express";
-import { getCustomRepository } from "typeorm";
+import { getCustomRepository, Like } from "typeorm";
 import GamesRepository from '../repositories/GamesRepository';
 
 
@@ -37,11 +37,13 @@ class GameController {
 
   async show(request: Request, response: Response) {
     try {
-      const { id } = request.params;
+      const { name } = request.query;
 
       const gamesRepository = getCustomRepository(GamesRepository);
 
-      const game = await gamesRepository.findOne(id);
+      const game = await gamesRepository.find({
+        name: Like(`%${name}%`),
+      });
 
       if (!game) {
         return response.json({error: "Game not found."});
