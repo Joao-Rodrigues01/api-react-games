@@ -25,9 +25,9 @@ do select
 
 ## 📁 Scripts
 
-Para rodar o servidor utilize: https://github.com/Joao-Rodrigues01/react-games
+Para rodar o servidor utilize:
 - yarn dev
 
-Encontre a aplicação web nesse repositório: 
+Encontre a aplicação web nesse repositório:  https://github.com/Joao-Rodrigues01/react-games
 
 <strong> Logo mais novas atualizações! </strong>
