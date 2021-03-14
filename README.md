@@ -3,12 +3,6 @@
     React Games
   </h1>
   
-  <img 
-    src="./.github/react-games.png" 
-    alt="imagem do projeto react games" 
-    width="800px" 
-    height="420px"
-  />
 
 ## 🚀 Tecnologias
 
@@ -29,17 +23,11 @@ e a cor do game, é possivel procurar na barra de pesquisa algum game e também 
 possivel ver todos os games de uma determinada plataforma, trocando as options
 do select
 
-## 🔖 Layout
-Este layout foi inspirado em um projeto do dribble.
-
-- [Layout](https://dribbble.com/shots/10799678-Rainway-Dashboard-2-0/attachments/2459515?mode=media)
-
-<strong>Em breve layout para mobile!</strong>
 ## 📁 Scripts
 
-Encontre o servidor nesse repositório: 
-
-Para rodar a aplicação web utilize:
+Para rodar o servidor utilize:
 - yarn dev
+
+Encontre a aplicação web nesse repositório: 
 
 <strong> Logo mais novas atualizações! </strong>
